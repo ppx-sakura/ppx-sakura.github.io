@@ -1,0 +1,17 @@
+<script src="http://cdn.bootcss.com/purl/2.3.1/purl.min.js"></script>
+
+<script>
+var url = purl();
+if (url.attr('host') == '00102400.xyz') {
+    var old_url = url.attr('source');
+    var new_url = old_url.replace('00102400.xyz', "mybot.top");
+    window.location.replace(new_url); 
+}else if (url.attr('host') == 'www.00102400.xyz') {
+    var old_url = url.attr('source');
+    var new_url = old_url.replace('www.00102400.xyz', "mybot.top");
+    window.location.replace(new_url);
+}else {
+    window.location.href="http://mybot.top/blog/";
+}
+    
+</script>
